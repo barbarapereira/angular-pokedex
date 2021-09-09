@@ -10,9 +10,4 @@ export class PokemonListComponent {
     'Bulbasaur',
     'Ivisaur'
   ];
-
-  constructor() {
-     this.pokemons = this.pokemons;
-  }
-
 }
