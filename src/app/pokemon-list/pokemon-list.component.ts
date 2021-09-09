@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class PokemonListComponent {
   pokemons: any = [
     'Bulbasaur',
-    'Ivisaur'
+    'Ivisaur',
+    'Venosaur',
+    'Charmander'
   ];
 }
