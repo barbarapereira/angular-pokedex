@@ -7,21 +7,13 @@ import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { PokemonService } from './services/pokemon.service';
-import { PokemonInscribeComponent } from './pokemon-inscribe/pokemon-inscribe.component';
 import { Routes } from '@angular/router';
 
-const routes: Routes = [
-  {
-    path: 'inscribe',
-    component: PokemonInscribeComponent
-  }
-]
 @NgModule({
   declarations: [
     AppComponent,
     PokemonListComponent,
-    PokemonCardComponent,
-    PokemonInscribeComponent
+    PokemonCardComponent
   ],
   imports: [BrowserModule, HttpClientModule],
   providers: [PokemonService],

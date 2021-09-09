@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class PokemonCardComponent {
   @Input()
-  pokemon?: string;
+  pokemon?: any;
 
   @Input() 
   numero?: number;
