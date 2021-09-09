@@ -18,6 +18,11 @@ export class PokemonCardComponent {
     return `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${numeroFormatado}.png`;
   }
 
+  pokemonId() {
+    const id = this.leadingZero(this.numero);
+    return id;
+  }
+
   pegarNomePokemon() {
     return this.pokemon?.name || '';
   }
