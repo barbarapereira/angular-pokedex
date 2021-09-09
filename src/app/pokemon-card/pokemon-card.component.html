@@ -1,4 +1,13 @@
-<div class="pokemon__card">
-  <img [src]="pegarImagemPokemon()" alt="Bulbasour">
-  <p><strong>{{ pokemon }}</strong></p>
-</div>
+<section class="card">
+  <div class="card--image">
+    <img  aria-hidden="true" [src]="pegarImagemPokemon()" alt="Bulbasour">
+  </div>
+  <div class="card--number">Nº</div>
+  <div class="card--name">
+    <strong>{{ pokemon }}</strong>
+  </div>
+  <div class="card__types">
+    <div class="card__type card__type--grass">Grass</div>
+    <div class="card__type card__type--poison">Poison</div>  
+  </div>
+</section>
