@@ -15,6 +15,6 @@ export class PokemonService {
       .get<any>('https://pokeapi.co/api/v2/pokemon?limit=151')
       .toPromise();
 
-      console.log(this.pokemons = requisicao.results);
+      this.pokemons = requisicao.results;
   }
 }
