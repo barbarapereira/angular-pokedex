@@ -1,15 +1,20 @@
 <section class="card">
-  <a href="#" class="card--element" >
-    <div class="card--image">
-      <img  aria-hidden="true" [src]="pegarImagemPokemon()" alt="Bulbasour">
-    </div>
-  <div class="card--number">Nº {{pokemonId()}}</div>
-    <div class="card--name">
-      <h2>{{ pegarNomePokemon() | uppercase}}</h2>
-    </div>
-    <ul class="card__types">
-      <li class="card__type card__type--grass">Grass</li>
-      <li class="card__type card__type--poison">Poison</li>  
-    </ul>
-  </a>
+  <ul>
+    <li id="{{pegarNomePokemon()}}">
+      <a href="#" class="card--element" >
+        <figure class="card--image">
+          <img  aria-hidden="true" [src]="pegarImagemPokemon()" alt="Bulbasour">
+        </figure>
+    
+        <div class="card--number">Nº {{pokemonId()}}</div>
+          <div class="card--name">
+            <h2>{{ pegarNomePokemon() | uppercase}}</h2>
+          </div>
+          <div class="card__types">
+            <span class="card__type card__type--grass">Grass</span>
+            <span class="card__type card__type--poison">Poison</span>  
+        </div>
+      </a>      
+    </li>
+  </ul>
 </section>
